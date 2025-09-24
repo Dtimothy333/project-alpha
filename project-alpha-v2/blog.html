@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project Alpha — Blog</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header>
+    <nav class="nav container">
+      <a class="brand" href="./index.html">Project Alpha</a>
+      <button id="theme-toggle">🌃</button>
+      <ul class="nav-links">
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./projects.html">Projects</a></li>
+        <li><a aria-current="page" href="./blog.html">Blog</a></li>
+        <li><a href="./resources.html">Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+    <header class="page-header">
+      <h1>Davey's 🌎 Blog</h1>
+      <p class="muted">Blog of an aspiring developer</p>
+    </header>
+
+    <article id="entry-1" class="card">
+       <h2>Why Semantic HTML Matters</h2>
+        <p><small>Sept 12, 2025, 10:15</small></p>
+        <p>Semantic HTML isnt just about looking clean — it gives meaning to your code. 
+        When I use proper tags search engines can index my content more accurately, screen readers can guide users smoothly, 
+        and I can understand my own structure when I revisit a project later.</p>
+    </article>
+
+    <article id="entry-2" class="card">
+      <h2>CSS Grid vs Flexbox</h2>
+        <p><small>Sept 15, 2025, 13:23</small></p>
+        <p>Flexbox is great when I need to line things up in a single row or column, like a navigation bar. 
+        CSS Grid is better when I need a full layout with both rows and columns, like a gallery or dashboard. 
+        Understanding the difference saves time because I can pick the right tool instead of forcing one to do everything.</p>
+      <ul>
+        <li><strong>Grid</strong>: rows + columns (two-dimensional)</li>
+        <li><strong>Flex</strong>: one row or one column (one-dimensional)</li>
+      </ul>
+    </article>
+
+    <article id="entry-3" class="card">
+      <h2>GitHub Pages checklist</h2>
+      <p><small>Sept 17, 2025, 09:30 </small></p>
+      <p>GitHub is more than a place to store code — its a platform for version control, 
+        collaboration, and publishing. By pushing commits to a public repository, 
+        I keep a history of my work, get feedback from others, and even host live sites with GitHub Pages. 
+        These skills transfer directly to professional workflows.</p>
+      <ol>
+        <li>Public repo on <code>main</code></li>
+        <li>Settings → Pages → deploy from <em>main</em> (root)</li>
+        <li>Run Nu and WAVE</li>
+      </ol>
+    </article>
+  </main>
+
+  <footer>
+    <p><strong>Project Alpha</strong></p>
+    <p>
+      <a href="https://Dtimothy333.github.io/project-alpha/" target="_blank" rel="noopener">Live Site</a> |
+      <a href="https://github.com/Dtimothy333/project-alpha" target="_blank" rel="noopener">Repo</a> |
+      <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2FDtimothy333.github.io%2Fproject-alpha%2F" target="_blank" rel="noopener">Nu Report</a> |
+      <a href="https://wave.webaim.org/report#/https://Dtimothy333.github.io/project-alpha/" target="_blank" rel="noopener">WAVE Report</a>
+    </p>
+  </footer>
+
+  <script src="./scripts/main.js"></script>
+</body>
+</html>
+

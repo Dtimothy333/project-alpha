@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- Makes the layout responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Student portfolio home page">
+  <title>Project Alpha — Home</title>
+
+  <!-- Normalize.css: Reset so browsers look consistent -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+  <!-- Google Font (Inter) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- External stylesheet -->
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+  <!-- Skip link helps keyboard users jump to main content -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Consistent header & nav on every page -->
+  <header>
+    <nav class="nav container">
+      <a class="brand" href="./index.html">Project Alpha</a>
+      <button id="theme-toggle">🌃</button>
+      <ul class="nav-links">
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./projects.html">Projects</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./resources.html">Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+    <!-- Hero section -->
+    <section class="card hero">
+      <h1>Hello, Im learning to code 🚀</h1>
+      <p>This site is part of my web development journey. It’s simple, but it shows what I’m learning about structure, design, and accessibility. Every project here takes me one step closer to my future in tech.</p>
+      <p><a class="btn" href="./projects.html">PROJECTS</a></p>
+    </section>
+
+    <!-- Two-column layout: About teaser + Blog teasers -->
+    <section class="grid two-col gap">
+      <article class="card">
+        <img class="responsive" src="./images/profile-placeholder.jpg" alt="Developer avatar placeholder">
+        <h2 class="h4">About Me</h2>
+        <p>Front-end learner practicing structure, accessibility, and clean code.</p>
+        <p><a class="text-link" href="./about.html">More about me →</a></p>
+      </article>
+
+      <article class="card">
+        <h2 class="h4">Davey's TechWorld Blog</h2>
+        <ul class="blog-teasers">
+          <li>
+            <h3 class="h5"><a href="./blog.html#entry-1">Why semantic HTML matters</a></h3>
+            <p>Headings, landmarks, and lists help users and search engines.</p>
+          </li>
+          <li>
+            <h3 class="h5"><a href="./blog.html#entry-2">Grid vs Flex (quick guide)</a></h3>
+            <p>Use Grid for two-dimensional layouts, Flex for one dimension.</p>
+          </li>
+          <li>
+            <h3 class="h5"><a href="./blog.html#entry-3">GitHub Pages checklist</a></h3>
+            <p>Public repo, Pages on, validators passing.</p>
+          </li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <!-- Simple, consistent footer (rubric: links to Live, Repo, Nu, WAVE) -->
+  <footer>
+    <p><strong>Project Alpha</strong></p>
+    <p>
+      <a href="https://Dtimothy333.github.io/project-alpha/" target="_blank" rel="noopener">Live Site</a> |
+      <a href="https://github.com/Dtimothy333/project-alpha" target="_blank" rel="noopener">Repo</a> |
+      <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2FDtimothy333.github.io%2Fproject-alpha%2F" target="_blank" rel="noopener">Nu Report</a> |
+      <a href="https://wave.webaim.org/report#/https://Dtimothy333.github.io/project-alpha/" target="_blank" rel="noopener">WAVE Report</a>
+    </p>
+  </footer>
+
+  <!-- Tiny JS: placed at the end so content loads first -->
+  <script src="./scripts/main.js"></script>
+</body>
+</html>
